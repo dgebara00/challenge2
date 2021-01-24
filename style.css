@@ -7,13 +7,11 @@ html{
 .page{
     font-family: 'Rubik', sans-serif;
     margin: 0;
-    background-color: hsl(270, 20%, 96%);
 }
 .container{
     background-color: hsl(270, 20%, 96%);
     display: flex;
     margin: 0 auto;
-    width: 100%;
     min-height: 100vh;
     height: 100%;
     display: flex;
@@ -25,7 +23,6 @@ html{
     overflow: hidden;
     position: relative;
 }
-
 .container::before{
     content: '';
     z-index: 1;
@@ -50,7 +47,6 @@ html{
     bottom: -1rem;
     background: linear-gradient(-135deg, hsl(293, 78%, 35%) ,hsl(264, 100%, 61%)70%);
     opacity: .05;
-    
 }
 .container__slogan{
     text-align: left;
