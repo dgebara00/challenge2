@@ -25,8 +25,7 @@ html{
 .container::before{
     content: '';
     z-index: 1;
-    min-width: 350px;
-    width: 37%; 
+    width: 40.8%; 
     height: 88%;
     position: absolute;
     border-radius: 0 0 17rem 17rem;
@@ -38,7 +37,7 @@ html{
     content: '';
     z-index: 1;
     min-width: 350px;
-    width: 37%; 
+    width: 40.8%; 
     height: 88%;
     position: absolute;
     border-radius: 17rem 17rem 0 0;
@@ -73,14 +72,13 @@ html{
 
 .iphone{
     min-width: 250px;
-    width: 250px;
     height: 500px;
     border: 10px solid hsl(0, 0%, 100%);
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    margin: 1rem;
+    margin: 1rem 2rem;
     z-index: 2;
     position: relative;
 }
@@ -271,16 +269,16 @@ html{
         gap: 0;
     }
 }
-@media only screen and (min-width: 420px) and (max-width: 745px){
+@media only screen and (min-width: 420px) and (max-width: 777px){
     .container::before{
-        width: 420px; 
+        width: 65%; 
         height: 50%;
         border-radius: 0 0 15rem 15rem;
         left: -8rem;
         top: -1rem;
     }
     .container::after{
-        width: 420px;
+        width: 65%;
         height: 60%;
         border-radius: 15rem 15rem 0 0;
         right: -8rem;
@@ -288,9 +286,7 @@ html{
     }
     .container__slogan{
         text-align: center;
-    }
-    .container{
-        gap: 0;
+        margin-top: -1rem;
     }
 }
 @media only screen and (min-width: 1550px){
