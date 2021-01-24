@@ -1,0 +1,315 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+.page{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    background-color: hsl(270, 20%, 96%);
+}
+.container{
+    background-color: hsl(270, 20%, 96%);
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.container::before{
+    content: '';
+    z-index: 1;
+    min-width: 350px;
+    width: 37%; 
+    height: 88%;
+    position: absolute;
+    border-radius: 0 0 17rem 17rem;
+    left: -9.8rem;
+    top: -1rem;
+    background: linear-gradient(-135deg, hsl(293, 78%, 35%) ,hsl(264, 100%, 61%)70%);
+}
+.container::after{
+    content: '';
+    z-index: 1;
+    min-width: 350px;
+    width: 37%; 
+    height: 88%;
+    position: absolute;
+    border-radius: 17rem 17rem 0 0;
+    right: -9.8rem;
+    bottom: -1rem;
+    background: linear-gradient(-135deg, hsl(293, 78%, 35%) ,hsl(264, 100%, 61%)70%);
+    opacity: .05;
+    
+}
+.container__slogan{
+    text-align: left;
+    min-width: 280px;
+    width: min(80%, 400px);
+    padding: 1rem;
+    margin: 1rem;
+    z-index: 2;
+}
+.container__title{
+    font-weight: 500;
+    color: hsl(271, 36%, 24%);
+    font-size: 2rem;
+}
+.container__text{
+    opacity: .5;
+    line-height: 1.5;
+}
+
+/* ///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+/////////////////////////IPHONE////////////////////////////
+///////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////// */
+
+.iphone{
+    min-width: 250px;
+    width: 250px;
+    height: 500px;
+    border: 10px solid hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+    z-index: 2;
+    position: relative;
+}
+.iphone::before{
+    content: "";
+    width: 50%;
+    border-radius: 0 0 1rem 1rem;
+    position: absolute;
+    background: hsl(0, 0%, 100%);
+    height: 3%;
+    z-index: 3;
+}
+.iphone__header{
+    height: 13%;
+    width: 100%;
+    border-radius: 1.5rem 1.5rem .5rem .5rem;
+    background: linear-gradient(to left,  hsl(293, 74%, 48%), hsl(264, 100%, 61%) 80%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .5rem;
+    padding-top: .75rem;
+    z-index: 2;
+}
+.iphone__avatar-photo{
+    border-radius: 50%;
+    border: 1px solid white;
+    flex: .5;
+    width: 20px;
+}
+.iphone__name{
+    color:  hsl(0, 0%, 100%);
+    font-size: .6rem;
+}
+.iphone__status{
+    opacity: .6;
+    font-size: .5rem;
+    color: hsl(0, 0%, 100%);
+}
+.iphone__arrow-left{
+    flex: .25;
+    padding-left: .5rem;
+}
+.iphone__employee{
+    flex: 3;
+    line-height: .75;
+    padding-bottom: .25rem;
+}
+.iphone__dots{
+    flex: .25;
+    padding-right: .5rem;
+}
+.iphone__message--fair-background{
+    background-color: hsl(270, 20%, 96%);
+}
+.iphone__message--white-background{
+    background-color: white;
+}
+.iphone__main{
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 0 0 1.25rem 1.25rem;
+    height: 90%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1rem;
+}
+.iphone__footer{
+    position: absolute;
+    width: 90%;
+    height: 2.2rem;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5rem;
+    bottom: .5rem;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.iphone__input{
+    width: 154px;
+    max-height: 2rem;
+    font-size: 0.6rem;
+    border: none;
+    letter-spacing: 0.02em;
+    padding-top: 1rem;
+    padding-bottom: .9rem;
+    outline: none;
+    margin-left: 1rem;
+    opacity: .5;
+}
+.iphone__arrow-right{
+    padding: .5rem .5rem .5rem .6rem;
+    width: 30px;
+    border-radius: 50%;
+    background: hsl(271, 36%, 24%);
+}
+.iphone__message{
+    font-size: .5rem;
+}
+.iphone__message--fair-background{
+    width: 8rem;
+    color: hsl(264, 57%, 50%);
+    background: rgba(221, 219, 219, 0.5);
+    border-radius: .5rem .5rem .5rem .2rem;
+    padding: .5rem .7rem .5rem .5rem;
+    margin-left: .5rem;
+    opacity: .75;
+}
+.iphone__message--white-background-big{
+    opacity: .5;
+    width: 9rem;
+    color: black;
+    background: white;
+    border-radius: .5rem .5rem .2rem .5rem;
+    padding: .5rem 1rem .5rem .5rem;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    margin-left: 5rem;
+}
+.iphone__message--white-background-small{
+    opacity: .5;
+    width: 6rem;
+    color: black;
+    background: white;
+    border-radius: .5rem .5rem .2rem .5rem;
+    padding: .5rem 1rem .5rem .5rem;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    margin-left: 8rem;
+    margin-bottom: 1rem;
+}
+.iphone__dog-image{
+    width: 35px;
+    border-radius: .5rem;
+}
+.iphone__dogs{
+    margin-left: 7rem;
+    margin-top: 1rem;
+}
+.iphone__message--gradient-background{
+    display: flex;
+    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    color: rgb(228, 220, 220);
+    width: 10rem;
+    height: 2rem;
+    border-radius: .5rem .5rem .5rem .2rem;
+    align-items: center;
+}
+.iphone__price{
+    font-weight: 700;
+    font-size: .8rem;
+    flex: .5;
+}
+.iphone__service{
+    flex: 1;
+}
+.iphone__button{
+    flex: .4;
+    opacity: .5;
+    height: 15px;
+}
+/* ///////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////// */
+@media only screen and (max-width: 420px){
+    .container::before{
+        min-width: 450px;
+        width: 125%; 
+        height: 50%;
+        border-radius: 0 0 15rem 15rem;
+        left: -75%;
+        top: -1rem;
+    }
+    .container::after{
+        min-width: 450px;
+        width: 125%; 
+        height: 60%;
+        border-radius: 15rem 15rem 0 0;
+        right: -75%;
+        bottom: -5rem;
+    }
+    .container__slogan{
+        text-align: center;
+    }
+    .container{
+        gap: 0;
+    }
+}
+@media only screen and (min-width: 420px) and (max-width: 745px){
+    .container::before{
+        width: 420px; 
+        height: 50%;
+        border-radius: 0 0 15rem 15rem;
+        left: -8rem;
+        top: -1rem;
+    }
+    .container::after{
+        width: 420px;
+        height: 60%;
+        border-radius: 15rem 15rem 0 0;
+        right: -8rem;
+        bottom: -5rem;
+    }
+    .container__slogan{
+        text-align: center;
+    }
+    .container{
+        gap: 0;
+    }
+}
+@media only screen and (min-width: 1550px){
+    .container::before{
+        width: 40%; 
+        height: 88%;
+        border-radius: 0 0 25rem 25rem;
+        left: -5rem;
+        top: -1rem;
+    }
+    .container::after{
+        width: 40%;
+        height: 88%;
+        border-radius: 25rem 25rem 0 0;
+        right: -5rem;
+        bottom: -5rem;
+    }
+}
