@@ -13,7 +13,6 @@ html{
     display: flex;
     margin: 0 auto;
     min-height: 100vh;
-    height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
