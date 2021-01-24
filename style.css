@@ -97,7 +97,7 @@ html{
 .iphone__header{
     height: 13%;
     width: 100%;
-    border-radius: 1.5rem 1.5rem .5rem .5rem;
+    border-radius: 1.25rem 1.25rem .5rem .5rem;
     background: linear-gradient(to left,  hsl(293, 74%, 48%), hsl(264, 100%, 61%) 80%);
     display: flex;
     align-items: center;
@@ -228,6 +228,7 @@ html{
     height: 2rem;
     border-radius: .5rem .5rem .5rem .2rem;
     align-items: center;
+    margin-left: .5rem
 }
 .iphone__price{
     font-weight: 700;
